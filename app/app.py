@@ -135,4 +135,3 @@ def new_review():
     else:
         return {"error": "Text or title are unspecified",
                 "result": False}
-

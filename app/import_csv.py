@@ -1,5 +1,4 @@
 import csv
-import datetime
 import flask_sqlalchemy
 from app.models import Products, Reviews
 

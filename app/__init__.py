@@ -11,7 +11,7 @@ def create_app():
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     flask_app.config['CACHE_TYPE'] = 'SimpleCache'
-    swagger = Swagger(flask_app)
+    Swagger(flask_app)
     cache = Cache(flask_app)
     flask_app.app_context().push()
     db.init_app(flask_app)
